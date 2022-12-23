@@ -9,7 +9,7 @@ const CardBalance = () => {
     <div className="h-[19rem]  p-8 mx-3 my-3 rounded-2xl shadow-2xl bg-black text-white">
       <div className="flex justify-between mb-4 ">
         <h2 className="text-xl font-bold tracking-wider">My Wallet</h2>
-        <Button title="View All" />
+        <Button title="View All" bgColor="bg-white" textColor="text-black" pd="px-4 py-2"/>
       </div>
       <div className="flex   justify-between ">
         <div className="flex flex-col justify-center items-center md:ml-4">

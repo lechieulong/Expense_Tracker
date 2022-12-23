@@ -10,6 +10,7 @@ import History from './pages/History/History'
 import NavHeader from './components/NavHeader/NavHeader'
 
 import { useGeneralContext } from "./context/GeneralProvider";
+import DataProvider from "./context/DataProvider";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
   const {activeMenu} = useGeneralContext();
 
   return (
+    <DataProvider>
     <div className="">
       <BrowserRouter>
         <div className="flex">
@@ -52,6 +54,7 @@ function App() {
         </div>
       </BrowserRouter>
     </div>
+    </DataProvider>
   );
 }
 
